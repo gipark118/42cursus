@@ -6,7 +6,7 @@
 #    By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/05 23:58:25 by gipark            #+#    #+#              #
-#    Updated: 2020/04/19 21:16:01 by gipark           ###   ########.fr        #
+#    Updated: 2020/05/05 18:35:00 by gipark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,16 +62,13 @@ CC		= gcc
 RM		= rm -f
 CFLAG	= -Wall -Wextra -Werror
 
+all : ${NAME}
+
 .c.o :
 	${CC} ${CFLAGS} -c $< -o ${<:%.c=%.o}
 
-bonus :	${BONUS_OBJS} ${OBJS}
-	${LIBC} ${NAME} ${OBJS} ${BONUS_OBJS}
-
 ${NAME} : ${OBJS}
 	${LIBC} ${NAME} ${OBJS}
-
-all : ${NAME}
 
 clean :
 	${RM} ${OBJS} ${BONUS_OBJS}
@@ -79,6 +76,9 @@ clean :
 fclean : clean
 	${RM} ${NAME}
 
-re : fclean all
+re : fclean all bonus
+
+bonus :	${BONUS_OBJS}
+	${LIBC} ${NAME} ${BONUS_OBJS}
 
 .PHONY: clean fclean all re
