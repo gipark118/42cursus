@@ -2,9 +2,9 @@
 
 ### Final Score
 
-![](/images/gnl_finale.png)
+![](images/gnl_finale.png)
 
-![](/images/gnl_score.png)
+![](images/gnl_score.png)
 
 
 
@@ -12,7 +12,7 @@
 
 ------
 
-![](/images/gnl_first.png)
+![](images/gnl_first.png)
 
 \- **peer scoring error.**
 
