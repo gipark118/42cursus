@@ -8,11 +8,11 @@
 
 ### Circle 01
 
-|                    Project                    | Score | Retry |    Duration    |  Note   |
-| :-------------------------------------------: | :---: | :---: | :------------: | :-----: |
-| **[get_next_line](./Circle01/get_next_line)** |       |       | 2020. 04. 27 - | Lang: C |
-|     **[ft_printf](./Circle01/ft_printf)**     |       |       |                |         |
-|       **[netwhat](./Circle01/netwhat)**       |       |       |                |         |
+|                    Project                    |     Score      | Retry |       Duration        |  Note   |
+| :-------------------------------------------: | :------------: | :---: | :-------------------: | :-----: |
+| **[get_next_line](./Circle01/get_next_line)** | 114% [Perfect] |   0   | 2020. 04. 27 - 06. 18 | Lang: C |
+|     **[ft_printf](./Circle01/ft_printf)**     |                |       |                       |         |
+|       **[netwhat](./Circle01/netwhat)**       |                |       |                       |         |
 
 ### Circle 02
 
