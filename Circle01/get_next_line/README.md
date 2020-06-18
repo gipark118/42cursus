@@ -2,9 +2,9 @@
 
 ### Final Score
 
-![](D:/Park/gipark/Circle01/get_next_line/images/gnl_finale.png)
+![](/images/gnl_finale.png)
 
-![](D:/Park/gipark/Circle01/get_next_line/images/gnl_score.png)
+![](/images/gnl_score.png)
 
 
 
@@ -12,7 +12,7 @@
 
 ------
 
-![](D:/Park/gipark/Circle01/get_next_line/images/gnl_first.png)
+![](/images/gnl_first.png)
 
 \- **peer scoring error.**
 
