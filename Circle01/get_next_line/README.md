@@ -16,6 +16,12 @@
 
 \- **peer scoring error.**
 
+### Second Try
+
+------
+
+![](images/gnl_second.png)
+
 ### Reference
 
 ------
