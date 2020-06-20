@@ -10,7 +10,7 @@
 
 |                    Project                    |     Score      | Retry |       Duration        |  Note   |
 | :-------------------------------------------: | :------------: | :---: | :-------------------: | :-----: |
-| **[get_next_line](./Circle01/get_next_line)** | 114% [Perfect] |   0   | 2020. 04. 27 - 06. 18 | Lang: C |
+| **[get_next_line](./Circle01/get_next_line)** | 115% [Perfect] |   1   | 2020. 04. 27 - 06. 20 | Lang: C |
 |     **[ft_printf](./Circle01/ft_printf)**     |                |       |                       |         |
 |       **[netwhat](./Circle01/netwhat)**       |                |       |                       |         |
 
@@ -59,4 +59,3 @@
 | Project | Score | Retry | Duration | Note |
 | :-----: | :---: | :---: | :------: | :--: |
 |   ...   |  ...  |  ...  |   ...    | ...  |
-
