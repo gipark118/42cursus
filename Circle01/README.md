@@ -2,6 +2,6 @@
 
 |               Project                |     Score      | Retry |       Duration        |  Note   |
 | :----------------------------------: | :------------: | :---: | :-------------------: | :-----: |
-| **[get_next_line](./get_next_line)** | 114% [Perfect] |   0   | 2020. 04. 27 - 06. 18 | Lang: C |
+| **[get_next_line](./get_next_line)** | 115% [Perfect] |   1   | 2020. 04. 27 - 06. 20 | Lang: C |
 |     **[ft_printf](./ft_printf)**     |                |       |                       |         |
 |       **[netwhat](./netwhat)**       |                |       |                       |         |
