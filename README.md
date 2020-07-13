@@ -11,7 +11,7 @@
 |                    Project                    |     Score      | Retry |       Duration        |  Note   |
 | :-------------------------------------------: | :------------: | :---: | :-------------------: | :-----: |
 | **[get_next_line](./Circle01/get_next_line)** | 115% [Perfect] |   1   | 2020. 04. 27 - 06. 20 | Lang: C |
-|     **[ft_printf](./Circle01/ft_printf)**     |                |       |                       |         |
+|     **[ft_printf](./Circle01/ft_printf)**     |                |       | 2020. 07. 13          |         |
 |       **[netwhat](./Circle01/netwhat)**       |                |       |                       |         |
 
 ### Circle 02
