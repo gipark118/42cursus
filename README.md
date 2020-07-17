@@ -11,16 +11,16 @@
 |                    Project                    |     Score      | Retry |       Duration        |  Note   |
 | :-------------------------------------------: | :------------: | :---: | :-------------------: | :-----: |
 | **[get_next_line](./Circle01/get_next_line)** | 115% [Perfect] |   1   | 2020. 04. 27 - 06. 20 | Lang: C |
-|     **[ft_printf](./Circle01/ft_printf)**     |                |       | 2020. 07. 13          |         |
+|     **[ft_printf](./Circle01/ft_printf)**     |                |       |    2020. 07. 13 -     | Lang: C |
 |       **[netwhat](./Circle01/netwhat)**       |                |       |                       |         |
 
 ### Circle 02
 
-|   Project    | Score | Retry | Duration | Note |
-| :----------: | :---: | :---: | :------: | :--: |
-|    cub3d     |       |       |          |      |
-|  ft_server   |       |       |          |      |
-| Exam Rank 02 |       |       |          |      |
+|                Project                 | Score | Retry |    Duration    |   Note   |
+| :------------------------------------: | :---: | :---: | :------------: | :------: |
+|                 cub3d                  |       |       |                |          |
+| **[ft_server](./Circle02/ft_server/)** |       |       | 2020. 07. 14 - | Lang: Go |
+|              Exam Rank 02              |       |       |                |          |
 
 ### Circle 03
 
