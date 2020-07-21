@@ -1,61 +1,34 @@
-# 42cursus Repository
+# ➿ 42cursus Repository
 
-### Circle 00
+| Circle | Order |                    Project                    | Language | Retry |    score    |  Ended Date  |
+| :----: | :---: | :-------------------------------------------: | :------: | :---: | :---------: | :----------: |
+|   00   |  01   |         **[Libft](./Circle00/Libft)**         |    C     |   1   | **115**/110 | 2020. 04. 18 |
+|   01   |  02   | **[get_next_line](./Circle01/get_next_line)** |    C     |   1   | **115**/110 | 2020. 06. 20 |
+|        |  03   |     **[ft_printf](./Circle01/ft_printf)**     |    C     |       |             |              |
+|        |  04   |       **[netwhat](./Circle01/netwhat)**       |    -     |       |             |              |
+|   02   |  05   |                     cub3d                     |          |       |             |              |
+|        |  06   |    **[ft_server](./Circle02/ft_server/)**     |    Go    |       |             |              |
+|        |  07   |                 Exam Rank 02                  |          |       |             |              |
+|   03   |  08   |                  ft_services                  |          |       |             |              |
+|        |  09   |                   minishell                   |          |       |             |              |
+|        |  10   |                    libasm                     |          |       |             |              |
+|        |  11   |                 Exam Rank 03                  |          |       |             |              |
+|   04   |  12   |                 CPP Module 00                 |          |       |             |              |
+|        |  13   |                 CPP Module 01                 |          |       |             |              |
+|        |  14   |                 CPP Module 02                 |          |       |             |              |
+|        |  15   |                 CPP Module 03                 |          |       |             |              |
+|        |  16   |                 CPP Module 04                 |          |       |             |              |
+|        |  17   |                 CPP Module 05                 |          |       |             |              |
+|        |  18   |                 CPP Module 06                 |          |       |             |              |
+|        |  19   |                 CPP Module 07                 |          |       |             |              |
+|        |  20   |                 CPP Module 08                 |          |       |             |              |
+|        |  21   |                 philosophers                  |          |       |             |              |
+|        |  22   |                 Exam Rank 04                  |          |       |             |              |
+|   05   |  23   |                 ft_containers                 |          |       |             |              |
+|        |  24   |                    webserv                    |          |       |             |              |
+|        |  25   |                 Exam Rank 05                  |          |       |             |              |
+|   06   |  26   |               ft_transcendence                |          |       |             |              |
+|        |  27   |                 Exam Rank 06                  |          |       |             |              |
+| Branch |  28   |                      ...                      |          |       |             |              |
+|        |  29   |                      ...                      |          |       |             |              |
 
-|            Project            |     Score      | Retry |        Duration        |  Note   |
-| :---------------------------: | :------------: | :---: | :--------------------: | :-----: |
-| **[Libft](./Circle00/Libft)** | 115% [Perfect] |   1   | 2020. 02. 24 - 04 . 18 | Lang: C |
-
-### Circle 01
-
-|                    Project                    |     Score      | Retry |       Duration        |  Note   |
-| :-------------------------------------------: | :------------: | :---: | :-------------------: | :-----: |
-| **[get_next_line](./Circle01/get_next_line)** | 115% [Perfect] |   1   | 2020. 04. 27 - 06. 20 | Lang: C |
-|     **[ft_printf](./Circle01/ft_printf)**     |                |       |    2020. 07. 13 -     | Lang: C |
-|       **[netwhat](./Circle01/netwhat)**       |                |       |                       |         |
-
-### Circle 02
-
-|                Project                 | Score | Retry |    Duration    |   Note   |
-| :------------------------------------: | :---: | :---: | :------------: | :------: |
-|                 cub3d                  |       |       |                |          |
-| **[ft_server](./Circle02/ft_server/)** |       |       | 2020. 07. 14 - | Lang: Go |
-|              Exam Rank 02              |       |       |                |          |
-
-### Circle 03
-
-|   Project    | Score | Retry | Duration | Note |
-| :----------: | :---: | :---: | :------: | :--: |
-|    libasm    |       |       |          |      |
-| ft_services  |       |       |          |      |
-|  minishell   |       |       |          |      |
-| Exam Rank 03 |       |       |          |      |
-
-### Circle 04
-
-|      Project       | Score | Retry | Duration | Note |
-| :----------------: | :---: | :---: | :------: | :--: |
-| CPP Module 00 - 08 |       |       |          |      |
-|    philosophers    |       |       |          |      |
-|    Exam Rank 04    |       |       |          |      |
-
-### Circle 05
-
-|    Project    | Score | Retry | Duration | Note |
-| :-----------: | :---: | :---: | :------: | :--: |
-| ft_containers |       |       |          |      |
-|    webserv    |       |       |          |      |
-| Exam Rank 05  |       |       |          |      |
-
-### Circle 06
-
-|     Project      | Score | Retry | Duration | Note |
-| :--------------: | :---: | :---: | :------: | :--: |
-| ft_transcendence |       |       |          |      |
-|   Exam Rank 06   |       |       |          |      |
-
-### Circle Branch
-
-| Project | Score | Retry | Duration | Note |
-| :-----: | :---: | :---: | :------: | :--: |
-|   ...   |  ...  |  ...  |   ...    | ...  |
