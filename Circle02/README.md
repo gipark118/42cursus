@@ -1,7 +1,7 @@
-### Circle 02
+# Circle 02
 
-|                Project                 | Score | Retry |    Duration    |   Note   |
-| :------------------------------------: | :---: | :---: | :------------: | :------: |
-|                 cub3d                  |       |       |                |          |
-| **[ft_server](./Circle02/ft_server/)** |       |       | 2020. 07. 14 - | Lang: Go |
-|              Exam Rank 02              |       |       |                |          |
+| Circle | Order |                    Project                    | Language |  Status  | Retry |    score    | Ended Date   |
+| :----: | :---: | :-------------------------------------------: | :------: | :------: | :---: | :---------: | ------------ |
+|  01   |                     cub3d                     |          |          |       |             |              |
+|  02   |    **[ft_server](./ft_server/)**     |    Go    |  ♻️Doing  |       |             |              |
+|  03   |                 Exam Rank 02                  |          |          |       |             |              |
