@@ -1,7 +1,6 @@
-### Circle 01
+# Circle 01
 
-|               Project                |     Score      | Retry |       Duration        |  Note   |
-| :----------------------------------: | :------------: | :---: | :-------------------: | :-----: |
-| **[get_next_line](./get_next_line)** | 115% [Perfect] |   1   | 2020. 04. 27 - 06. 20 | Lang: C |
-|     **[ft_printf](./ft_printf)**     |                |       | 2020. 07. 13          |         |
-|       **[netwhat](./netwhat)**       |                |       |                       |         |
+| Order |                    Project                    | Language |  Status  | Retry |    score    | Ended Date   |
+|  01   | **[get_next_line](./get_next_line)** |    C     | ✔️Perfect |   1   | **115**/110 | 2020. 06. 20 |
+|  02   |     **[ft_printf](./ft_printf)**     |    C     |  ♻️Doing  |       |             |              |
+|  03   |       **[netwhat](./netwhat)**       |    -     |          |       |             |              |
