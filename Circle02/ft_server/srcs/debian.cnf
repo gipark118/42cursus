@@ -7,6 +7,6 @@ socket   = /var/run/mysqld/mysqld.sock
 [mysql_upgrade]
 host     = localhost
 user     = root
-password = 120
+password = 1201
 socket   = /var/run/mysqld/mysqld.sock
 basedir  = /usr

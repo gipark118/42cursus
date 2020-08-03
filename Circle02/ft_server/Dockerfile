@@ -20,7 +20,12 @@ RUN apt-get install -y mariadb-server php-mysql
 RUN apt-get install -y php-mbstring
 COPY ./srcs/php.ini /etc/php/7.3/fpm/php.ini
 
-#set workdir
+#setting ssl protocol
+#RUN openssl req -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/private.key -out /etc/ssl/certs/private.crt -subj "/C=KR/ST=Seoul/L=Gang-nam/O=42seoul/OU=gipark/CN=student.42seoul.kr" &&\
+#   chown -R www-data:www-data * &&\
+#   chmod -R 755 *
+
+#set workdir for phpmyadmin and wordpress
 WORKDIR /var/www/html
 
 #install phpMyAdmin && setting phpMyAdmin config
@@ -35,3 +40,21 @@ RUN curl https://wordpress.org/latest.zip -o wordpress.zip &&\
     unzip wordpress.zip &&\
     rm -rf wordpress.zip
 COPY ./srcs/wp-config.php ./wordpress
+
+#set workdir for mysql_config
+WORKDIR /etc/mysql
+
+#setting mysql config
+COPY ./srcs/mysql_secure_installation_auto.sh ./
+RUN chmod +x ./mysql_secure_installation_auto.sh
+COPY ./srcs/debian.cnf ./debian.cnf
+COPY ./srcs/mysql_config.sql ./
+COPY ./srcs/init_mysql.sh ./
+
+#set starting services
+COPY ./srcs/init_service.sh /
+
+CMD service mysql start &&\
+    bash ./mysql_secure_installation_auto.sh &&\
+    bash ./init_mysql.sh &&\
+    bash /init_service.sh
