@@ -50,9 +50,11 @@ RUN chmod +x ./mysql_secure_installation_auto.sh
 COPY ./srcs/debian.cnf ./debian.cnf
 COPY ./srcs/mysql_config.sql ./
 COPY ./srcs/init_mysql.sh ./
+RUN chmod +x ./init_mysql.sh
 
 #set starting services
 COPY ./srcs/init_service.sh /
+RUN chmod +x /init_service.sh
 
 CMD service mysql start &&\
     bash ./mysql_secure_installation_auto.sh &&\

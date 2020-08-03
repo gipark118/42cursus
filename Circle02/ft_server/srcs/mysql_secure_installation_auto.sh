@@ -6,7 +6,7 @@ apt-get install -y expect
 MYSQL_ROOT_PASSWORD=1201
 
 SECURE_MYSQL=$(expect -c "
-set timeout 10
+set timeout 5
 spawn mysql_secure_installation
 expect \"Enter current password for root (enter for none):\"
 send \"$MYSQL\r\"
