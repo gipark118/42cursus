@@ -9,7 +9,7 @@
 |   02   |  05   |                     cub3d                     |          |          |       |             |              |
 |        |  06   |    **[ft_server](./Circle02/ft_server/)**     |    Go    |  ♻️Doing  |       |             |              |
 |        |  07   |                 Exam Rank 02                  |          |          |       |             |              |
-|   03   |  08   |                  ft_services                  |          |          |       |             |              |
+|   03   |  08   |                  ft_services                  |          |  ♻️Doing  |       |             |              |
 |        |  09   |                   minishell                   |          |          |       |             |              |
 |        |  10   |                    libasm                     |          |          |       |             |              |
 |        |  11   |                 Exam Rank 03                  |          |          |       |             |              |
