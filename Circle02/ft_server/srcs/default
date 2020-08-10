@@ -31,6 +31,8 @@ server {
 
         listen 443 ssl;
         listen [::]:443 ssl;
+        ssl_certificate     /etc/ssl/certs/private.crt;
+        ssl_certificate_key /etc/ssl/private/private.key;
         #
         # Note: You should disable gzip for SSL traffic.
         # See: https://bugs.debian.org/773332
