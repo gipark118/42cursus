@@ -64,5 +64,5 @@ CMD service mysql start &&\
     bash /init_service.sh
 
 #######
-# once up to starting docker container, just exited.
+# It turns off as soon as the docker starts.
 #######
