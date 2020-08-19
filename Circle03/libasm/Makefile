@@ -6,7 +6,7 @@
 #    By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/12 16:02:12 by gipark            #+#    #+#              #
-#    Updated: 2020/08/12 16:55:24 by gipark           ###   ########.fr        #
+#    Updated: 2020/08/20 02:13:51 by gipark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,8 +31,8 @@ NASM_FLAGS	= -f macho64
 
 all : ${NAME}
 
-.s.o :
-	${NASM} ${NA_FLAGS} -s $< -o ${<:%.s=%.o}
+%.o : %.s
+	${NASM} -s -o $@ ${NASM_FLAGS} $<
 
 ${NAME} : ${OBJS}
 	${LIBC} ${NAME} ${OBJS}
