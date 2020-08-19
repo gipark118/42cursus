@@ -6,7 +6,7 @@
 #    By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/05 23:58:25 by gipark            #+#    #+#              #
-#    Updated: 2020/05/05 18:35:00 by gipark           ###   ########.fr        #
+#    Updated: 2020/08/20 02:19:13 by gipark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,7 @@ SRCS	= ft_memset.c \
 		  ft_putstr_fd.c \
 		  ft_putendl_fd.c \
 		  ft_putnbr_fd.c \
-		  
+
 BONUS_SRCS	= ft_lstnew.c \
 			  ft_lstadd_front.c \
 			  ft_lstsize.c \
@@ -60,7 +60,7 @@ NAME	= libft.a
 LIBC	= ar rcs
 CC		= gcc
 RM		= rm -f
-CFLAG	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror
 
 all : ${NAME}
 
