@@ -6,38 +6,45 @@
 #    By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/20 01:55:39 by gipark            #+#    #+#              #
-#    Updated: 2020/08/20 02:31:35 by gipark           ###   ########.fr        #
+#    Updated: 2020/09/08 05:32:06 by gipark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	=
+SRCS	= ${addprefix srcs/, ${shell ls ./srcs | grep '\.c'}}
 
-BONUS_SRCS	=
 OBJS	= ${SRCS:%.c=%.o}
-BONUS_OBJS	= ${BONUS_SRCS:%.c=%.o}
 NAME	= libftprintf.a
 LIBC	= ar rcs
 RM	= rm -f
 CC	= gcc
 CFLAGS	= -Wall -Wextra -Werror
 
+LIBFT	= libft.a
+LIBFT_DIR	= libft
+LIBFT_LIB	= ${LIBFT_DIR}/${LIBFT}
+
 all : ${NAME}
 
-%.o : %.c
-	${CC} -c -o $@ ${CFLAGS} $<
+${LIBFT_LIB} :
+	${MAKE} -C ${LIBFT_DIR}
 
-${NAME} : ${OBJS}
+%.o : %.c
+	${CC} -c -o $@ ${CFLAGS} $< -I./includes
+
+${NAME} : ${LIBFT_LIB} ${OBJS}
+	cp ${LIBFT_LIB} ${NAME}
 	${LIBC} ${NAME} ${OBJS}
 
+bonus : ${NAME}
+
 clean :
+	${MAKE} -C ${LIBFT_DIR} clean
 	${RM} ${OBJS} ${BONUS_OBJS}
 
 fclean : clean
+	${MAKE} -C ${LIBFT_DIR} fclean
 	${RM} ${NAME}
 
 re : fclean all bonus
-
-bonus : ${BONUS_OBJS}
-	${LIBC} ${NAME} ${BONUS_OBJS}
 
 .PHONY : clean fclean all re bonus
