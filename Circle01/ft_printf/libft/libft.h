@@ -1,44 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/08 05:20:53 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/08 11:52:02 by gipark           ###   ########.fr       */
+/*   Created: 2020/09/08 09:36:28 by gipark            #+#    #+#             */
+/*   Updated: 2020/09/08 09:37:38 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdarg.h>
-# include <stdint.h>
+# include <stddef.h>
 
-/*
-** FORMAT SPECIFIER STRUCT
-*/
-typedef struct s_flags
-{
-	char					set[20];
-	char					spec_c;
-	char					padd_c;
-	char					minus;
-	char					plus;
-	char					space;
-	char					hash;
-	char					hash;
-	int						width;
-	char					point;
-	int						precision;
-	char					length;
-	char					print_n0;
-	char					sign;
-	unsigned long long int	ulli;
-	long long int			lli;
-}
+size_t	ft_strlen(const char *s);
 
 #endif
