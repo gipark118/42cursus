@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 05:20:53 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 02:51:46 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 03:00:16 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
-# include "libft/libft.h"
+# include "../libft/libft.h"
 
 # define FLAGS			"-+#0 "
 # define FLAGS_ALL		"-+#0 *.0123456789lh"

@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 12:01:15 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 02:23:42 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 03:08:34 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	print_decimal(int *len, t_info inf, va_list ap)
 	}
 	inf.number_zero = 0;
 	inf.str = ft_ulltoa_base(inf.ulli, DIGITS);
-	print_flags(len, fl);
+	print_flags(len, inf);
 	free(inf.str);
 }
 
@@ -66,6 +66,6 @@ void	print_hexa(int *len, t_info inf, va_list ap)
 		inf.str = ft_ulltoa_base(inf.ulli, HEX_LOW);
 	if (inf.spec_c == 'X')
 		inf.str = ft_ulltoa_base(inf.ulli, HEX_UPP);
-	print_flags(len, fl);
+	print_flags(len, inf);
 	free(inf.str);
 }

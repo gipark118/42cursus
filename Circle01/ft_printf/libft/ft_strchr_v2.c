@@ -6,9 +6,11 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 11:33:24 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 02:04:32 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 02:57:19 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_strchr_v2(const char *s, int c)
 {

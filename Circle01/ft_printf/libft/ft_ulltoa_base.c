@@ -6,13 +6,15 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 11:47:49 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 02:05:59 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 02:59:33 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_ulltoa_base(unsigned long long int n, char *base)
 {
-	char					str;
+	char					*str;
 	unsigned long long int	nbr;
 	size_t					size;
 	int						base_len;

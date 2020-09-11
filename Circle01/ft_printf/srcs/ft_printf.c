@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 03:37:22 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 02:14:06 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 03:07:07 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static void		print_conversions(va_list ap, int *len, t_info inf)
 		print_decimal(len, inf, ap);
 	if (inf.spec_c == 'x' || inf.spec_c == 'X')
 		print_hexa(len, inf, ap);
-	if (inf.spec_c == 'n' && (p = va_arg(ap, int *)))
+	if (inf.spec_c == 'n' && (pn = va_arg(ap, int *)))
 		*pn = *len;
 }
 
@@ -89,7 +89,7 @@ static void		prepare_info(va_list ap, const char *format, int *len, int *i)
 	int		j;
 
 	j = 0;
-	while (ft_strchr_v2(infAGS_ALL, format[*i]) && j < 19)
+	while (ft_strchr_v2(FLAGS_ALL, format[*i]) && j < 19)
 		inf.set[j++] = format[(*i)++];
 	inf.set[j] = '\0';
 	if (ft_strchr_v2(CONVERSIONS, format[*i]))
@@ -103,7 +103,7 @@ static void		prepare_info(va_list ap, const char *format, int *len, int *i)
 		inf.point = 0;
 		inf.precision = 0;
 		inf.length = 0;
-		inf.pad_c = ' ';
+		inf.padd_c = ' ';
 		inf = prepare_flags(ap, inf);
 		print_conversions(ap, len, inf);
 	}

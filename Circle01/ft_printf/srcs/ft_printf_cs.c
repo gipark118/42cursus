@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 11:55:30 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 02:22:09 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 03:07:35 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void		print_percent(int *len, t_info inf)
 
 void		print_char(int *len, t_info inf, char c)
 {
-	inf.pad_c = ' ';
+	inf.padd_c = ' ';
 	inf.precision = 1;
 	if (inf.minus == 0)
 		print_padding(len, inf);

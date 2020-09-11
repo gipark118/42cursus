@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 12:06:54 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 02:27:34 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 03:10:41 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,8 @@ static void	print_zero(int *len, t_info inf)
 		ft_putstr_len("0x", len, 2);
 	if (inf.spec_c == 'X' && inf.hash == 1)
 		ft_putstr_len("0X", len, 2);
-	if (inf.spec_c == 'o' && inf.hash == 1)
-		ft_putchar_len('0', len);
 	if (inf.minus == 0 && inf.padd_c == '0')
-		print_width(len, fl);
+		print_width(len, inf);
 	if (inf.point == 1)
 	{
 		j = inf.precision;
@@ -66,7 +64,7 @@ void		print_flags(int *len, t_info inf)
 		ft_putchar_len(inf.sign, len);
 	if (inf.space == 1 && inf.plus == 0 && inf.sign == '+')
 		ft_putchar_len(' ', len);
-	print_zeros(len, inf);
+	print_zero(len, inf);
 	if (!(inf.ulli == 0 && inf.point == 1 && inf.precision == 0) ||
 			inf.number_zero == 1)
 		ft_putstr_len(inf.str, len, ft_strlen(inf.str));
