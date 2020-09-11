@@ -6,18 +6,18 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 11:38:09 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/11 11:39:51 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 02:03:46 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putstr_len(char *s, int *len, int size)
+void	ft_putstr_len(char *s, int *len, int size)
 {
-    int i;
+	int	i;
 
-    if (s)
-    {
-        i = 0;
-        while (s[i] && i < size)
-            ft_putchar_len(s[i++], len);
-    }
+	if (s)
+	{
+		i = 0;
+		while (s[i] && i < size)
+			ft_putchar_len(s[i++], len);
+	}
 }

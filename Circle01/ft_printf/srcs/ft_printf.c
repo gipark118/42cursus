@@ -6,13 +6,13 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 03:37:22 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/11 11:28:18 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 02:14:06 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void 	print_conversions(va_list ap, int *len, t_info inf)
+static void		print_conversions(va_list ap, int *len, t_info inf)
 {
 	int		*pn;
 
@@ -32,9 +32,9 @@ static void 	print_conversions(va_list ap, int *len, t_info inf)
 		*pn = *len;
 }
 
-static t_info 	set_asterisk(va_list ap, t_info inf, int *j)
+static t_info	set_asterisk(va_list ap, t_info inf, int *j)
 {
-	int value;
+	int	value;
 
 	(*j)++;
 	value = va_arg(ap, int);
@@ -54,7 +54,7 @@ static t_info 	set_asterisk(va_list ap, t_info inf, int *j)
 	return (inf);
 }
 
-static t_info 	prepare_flags(va_list ap, t_info inf)
+static t_info	prepare_flags(va_list ap, t_info inf)
 {
 	int		j;
 
@@ -113,7 +113,7 @@ static void		prepare_info(va_list ap, const char *format, int *len, int *i)
 
 int				ft_printf(const char *format, ...)
 {
-	va_list ap;
+	va_list	ap;
 	int		len;
 	int		i;
 

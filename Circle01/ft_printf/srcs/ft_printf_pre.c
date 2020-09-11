@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 12:06:54 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/11 12:11:53 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 02:27:34 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 static void	print_width(int *len, t_info inf)
 {
 	if (inf.sign == '-' || (inf.plus == 1 && inf.sign == '+') ||
-		(inf.space == 1 && inf.plus == 0 && inf.sign == '+'))
+			(inf.space == 1 && inf.plus == 0 && inf.sign == '+'))
 		inf.width--;
 	if (inf.precision <= (int)inf.strlen)
 		inf.precision = (int)inf.strlen;
 	if (inf.padd_c == '0' && (inf.minus == 1 || inf.point == 1) &&
-		!(inf.spec_c == 'f' && inf.minus == 0))
+			!(inf.spec_c == 'f' && inf.minus == 0))
 		inf.padd_c = ' ';
 	while (inf.width > inf.precision)
 	{
@@ -29,11 +29,11 @@ static void	print_width(int *len, t_info inf)
 	}
 }
 
-static void print_zero(int *len, t_info inf)
+static void	print_zero(int *len, t_info inf)
 {
-    int     j;
+	int	j;
 
-    if ((inf.spec_c == 'x' && inf.hash == 1) || inf.spec_c == 'p')
+	if ((inf.spec_c == 'x' && inf.hash == 1) || inf.spec_c == 'p')
 		ft_putstr_len("0x", len, 2);
 	if (inf.spec_c == 'X' && inf.hash == 1)
 		ft_putstr_len("0X", len, 2);
@@ -49,10 +49,11 @@ static void print_zero(int *len, t_info inf)
 	}
 }
 
-void        print_flags(int *len, t_info inf)
+void		print_flags(int *len, t_info inf)
 {
-    inf.strlen = ft_strlen(inf.str);
-	if (inf.ulli == 0 && inf.point == 1 && inf.precision == 0 && inf.number_zero == 0)
+	inf.strlen = ft_strlen(inf.str);
+	if (inf.ulli == 0 && inf.point == 1 && inf.precision == 0 &&
+			inf.number_zero == 0)
 		inf.width++;
 	if (((inf.spec_c == 'x' || inf.spec_c == 'X') && inf.hash == 1) ||
 			inf.spec_c == 'p')
@@ -67,7 +68,7 @@ void        print_flags(int *len, t_info inf)
 		ft_putchar_len(' ', len);
 	print_zeros(len, inf);
 	if (!(inf.ulli == 0 && inf.point == 1 && inf.precision == 0) ||
-		inf.number_zero == 1)
+			inf.number_zero == 1)
 		ft_putstr_len(inf.str, len, ft_strlen(inf.str));
 	if (inf.minus == 1)
 		print_width(len, inf);

@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 05:20:53 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/11 11:06:49 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 02:30:51 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@
 # include <stdarg.h>
 # include "libft/libft.h"
 
-# define FLAGS		    "-+#0 "
-# define FLAGS_ALL 	    "-+#0 *.0123456789lh"
-# define CONVERSIONS    "cspdiuxX%nfge"
+# define FLAGS			"-+#0 "
+# define FLAGS_ALL		"-+#0 *.0123456789lh"
+# define CONVERSIONS	"cspdiuxX%nfge"
 
-# define DIGITS         "0123456789"
-# define HEX_LOW         "0123456789abcdef"
-# define HEX_UPP         "0123456789ABCDEF"
+# define DIGITS			"0123456789"
+# define HEX_LOW		"0123456789abcdef"
+# define HEX_UPP		"0123456789ABCDEF"
 
 
 typedef struct s_info
