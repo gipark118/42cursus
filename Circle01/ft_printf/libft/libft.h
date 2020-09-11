@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 03:57:25 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/11 11:53:08 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/11 12:18:32 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ void (*del)(void *));
 */
 int					ft_strchr_v2(const char *s, int c);
 void    			ft_putchar_len(char c, int *len);
-void    			ft_putstr_len(char *s, int *len, int size)
-char    			*ft_ulltoa_base(unsigned long long int n, char *base)
+void    			ft_putstr_len(char *s, int *len, int size);
+char    			*ft_ulltoa_base(unsigned long long int n, char *base);
 
 #endif
