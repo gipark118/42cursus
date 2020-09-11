@@ -6,7 +6,7 @@
 #    By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/20 01:55:39 by gipark            #+#    #+#              #
-#    Updated: 2020/09/08 05:32:06 by gipark           ###   ########.fr        #
+#    Updated: 2020/09/08 12:42:49 by gipark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ SRCS	= ${addprefix srcs/, ${shell ls ./srcs | grep '\.c'}}
 OBJS	= ${SRCS:%.c=%.o}
 NAME	= libftprintf.a
 LIBC	= ar rcs
+INCS	= ./includes
 RM	= rm -f
 CC	= gcc
 CFLAGS	= -Wall -Wextra -Werror
@@ -29,7 +30,7 @@ ${LIBFT_LIB} :
 	${MAKE} -C ${LIBFT_DIR}
 
 %.o : %.c
-	${CC} -c -o $@ ${CFLAGS} $< -I./includes
+	${CC} -c -o $@ ${CFLAGS} $< -I${INCS}
 
 ${NAME} : ${LIBFT_LIB} ${OBJS}
 	cp ${LIBFT_LIB} ${NAME}
