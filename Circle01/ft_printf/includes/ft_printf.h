@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 05:20:53 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 02:30:51 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 02:51:46 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,9 @@
 # define HEX_LOW		"0123456789abcdef"
 # define HEX_UPP		"0123456789ABCDEF"
 
-
-typedef struct s_info
+typedef struct	s_info
 {
-    char					set[20];
+	char					set[20];
 	char					spec_c;
 	char					padd_c;
 	char					minus;
@@ -46,7 +45,7 @@ typedef struct s_info
 	long long int			lli;
 	char					*str;
 	size_t					strlen;
-}               t_info
+}				t_info;
 
 /*
 **  FILE: ft_printf.c
