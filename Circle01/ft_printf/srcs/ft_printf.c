@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 03:37:22 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 03:07:07 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 12:31:17 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static t_info	prepare_flags(va_list ap, t_info inf)
 	j = 0;
 	while (inf.set[j] != '\0' && ft_strchr_v2(FLAGS, inf.set[j]))
 	{
-		if (inf.set[j++] == '\0')
+		if (inf.set[j++] == '0')
 			inf.padd_c = '0';
 	}
 	if (inf.set[j] == '*')
