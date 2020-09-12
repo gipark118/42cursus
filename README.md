@@ -2,8 +2,8 @@
 
 | Circle | Order |                    Project                    | Language |  Status  | Retry |    score    | Passed Date  |
 | :----: | :---: | :-------------------------------------------: | :------: | :------: | :---: | :---------: | ------------ |
-|   00   |  01   |         **[Libft](./Circle00/Libft)**         |    C     | ✔️Perfect |   1   | **115**/110 | 2020. 04. 18 |
-|   01   |  02   | **[get_next_line](./Circle01/get_next_line)** |    C     | ✔️Perfect |   1   | **115**/110 | 2020. 06. 20 |
+|   00   |  01   |         **[Libft](./Circle00/Libft)**         |    C     | ✔️Perfect |   1   | **115**/100 | 2020. 04. 18 |
+|   01   |  02   | **[get_next_line](./Circle01/get_next_line)** |    C     | ✔️Perfect |   1   | **115**/100 | 2020. 06. 20 |
 |        |  03   |     **[ft_printf](./Circle01/ft_printf)**     |    C     |  ♻️Doing  |       |             |              |
 |        |  04   |       **[netwhat](./Circle01/netwhat)**       |    -     |          |       |             |              |
 |   02   |  05   |                     cub3d                     |          |          |       |             |              |
