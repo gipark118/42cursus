@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 03:37:22 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 12:31:17 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 21:30:02 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 static void		print_conversions(va_list ap, int *len, t_info inf)
 {
-	int		*pn;
-
 	if (inf.spec_c == '%')
 		print_percent(len, inf);
 	if (inf.spec_c == 'c')
@@ -28,8 +26,6 @@ static void		print_conversions(va_list ap, int *len, t_info inf)
 		print_decimal(len, inf, ap);
 	if (inf.spec_c == 'x' || inf.spec_c == 'X')
 		print_hexa(len, inf, ap);
-	if (inf.spec_c == 'n' && (pn = va_arg(ap, int *)))
-		*pn = *len;
 }
 
 static t_info	set_asterisk(va_list ap, t_info inf, int *j)
