@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 05:20:53 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 03:00:16 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 22:13:06 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 # define FLAGS			"-+#0 "
 # define FLAGS_ALL		"-+#0 *.0123456789lh"
-# define CONVERSIONS	"cspdiuxX%nfge"
+# define CONVERSIONS	"cspdiuxX%"
 
 # define DIGITS			"0123456789"
 # define HEX_LOW		"0123456789abcdef"
