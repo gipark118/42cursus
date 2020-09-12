@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 12:06:54 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 21:44:13 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/13 04:11:20 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void		print_flags(int *len, t_info inf)
 	if (((inf.spec_c == 'x' || inf.spec_c == 'X') && inf.hash == 1) ||
 			inf.spec_c == 'p')
 		inf.width -= 2;
-	if (inf.point == 1 && inf.spec_c != 'f')
+	if (inf.point == 1)
 		inf.padd_c = ' ';
 	if (inf.minus == 0 && inf.padd_c == ' ')
 		print_width(len, inf);
