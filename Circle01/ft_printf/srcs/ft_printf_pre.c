@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 12:06:54 by gipark            #+#    #+#             */
-/*   Updated: 2020/09/12 03:10:41 by gipark           ###   ########.fr       */
+/*   Updated: 2020/09/12 21:44:13 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static void	print_width(int *len, t_info inf)
 	if (inf.precision <= (int)inf.strlen)
 		inf.precision = (int)inf.strlen;
 	if (inf.padd_c == '0' && (inf.minus == 1 || inf.point == 1) &&
-			!(inf.spec_c == 'f' && inf.minus == 0))
+			!(inf.minus == 0))
 		inf.padd_c = ' ';
 	while (inf.width > inf.precision)
 	{
