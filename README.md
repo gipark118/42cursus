@@ -5,7 +5,7 @@
 |   00   |  01   |         **[Libft](./Circle00/Libft)**         |    C     | ✔️Perfect |   1   | **115**/100 | 2020. 04. 18 |
 |   01   |  02   | **[get_next_line](./Circle01/get_next_line)** |    C     | ✔️Perfect |   1   | **115**/100 | 2020. 06. 20 |
 |        |  03   |     **[ft_printf](./Circle01/ft_printf)**     |    C     | ✔️Success |   0   | **108**/100 | 2020. 09. 13 |
-|        |  04   |       **[netwhat](./Circle01/netwhat)**       |    -     |          |       |             |              |
+|        |  04   |       **[netwhat](./Circle01/netwhat)**       |    -     | ✔️Perfect |   0   | **100**/100 | 2020. 09. 13 |
 |   02   |  05   |                     cub3d                     |          |          |       |             |              |
 |        |  06   |    **[ft_server](./Circle02/ft_server/)**     |    Go    |  ♻️Doing  |       |             |              |
 |        |  07   |                 Exam Rank 02                  |          |          |       |             |              |
