@@ -62,7 +62,3 @@ CMD service mysql start &&\
     bash ./mysql_secure_installation_auto.sh &&\
     bash ./init_mysql.sh &&\
     bash /init_service.sh
-
-#######
-# It turns off as soon as the docker starts.
-#######
