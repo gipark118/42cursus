@@ -9,7 +9,7 @@
 |   02   |  05   |                     cub3d                     |          |          |       |             |              |
 |        |  05   |                    miniRT                     |          |          |       |             |              |
 |        |  06   |    **[ft_server](./Circle02/ft_server/)**     |    Go    |  ♻️Doing  |       |             |              |
-|        |  07   |             **[Exam Rank 02]()**              |    C     |  ♻️Doing  |       |             |              |
+|        |  07   |             **[Exam Rank 02](#)**             |    C     |  ♻️Doing  |       |             |              |
 |   03   |  08   |                   minishell                   |          |          |       |             |              |
 |        |  09   |        **[libasm](./Circle03/libasm)**        | Assembly |  ♻️Doing  |       |             |              |
 |        |  10   |   **[ft_services](./Circle03/ft_services)**   |    Go    |  ♻️Doing  |       |             |              |
