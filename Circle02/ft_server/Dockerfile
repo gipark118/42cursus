@@ -2,7 +2,7 @@ FROM debian:buster
 MAINTAINER gipark <gipark@student.42seoul.kr>
 
 #update package && install utils
-RUN apt-get update && apt-get install -y vim unzip curl
+RUN apt-get update && apt-get install -y vim unzip curl openssl
 
 #install nginx && setting nginx config
 RUN apt-get install -y nginx
