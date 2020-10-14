@@ -2,7 +2,7 @@ FROM debian:buster
 MAINTAINER gipark <gipark@student.42seoul.kr>
 
 #update package && install utils
-RUN apt-get update && apt-get install -y vim unzip curl openssl
+RUN apt-get update && apt-get install -y vim unzip curl expect openssl
 
 #install nginx && setting nginx config
 RUN apt-get install -y nginx
@@ -61,4 +61,4 @@ RUN chmod +x /init_service.sh
 CMD service mysql start &&\
     bash ./mysql_secure_installation_auto.sh &&\
     bash ./init_mysql.sh &&\
-    bash /init_service.sh
+    bash ./init_service.sh

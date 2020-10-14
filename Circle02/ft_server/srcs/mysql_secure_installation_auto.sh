@@ -1,7 +1,5 @@
 #!/bin/bash
 
-apt-get install -y expect
-
 // Not required in actual script
 MYSQL_ROOT_PASSWORD=1201
 
