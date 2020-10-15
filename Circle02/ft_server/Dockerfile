@@ -61,4 +61,4 @@ RUN chmod +x /init_service.sh
 CMD service mysql start &&\
     bash ./mysql_secure_installation_auto.sh &&\
     bash ./init_mysql.sh &&\
-    bash ./init_service.sh
+    bash /init_service.sh
