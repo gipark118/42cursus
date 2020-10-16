@@ -10,7 +10,7 @@ COPY ./srcs/default /etc/nginx/sites-available/default
 
 #install php7.3-fpm
 RUN apt-get install -y php7.3-fpm
-COPY ./srcs/index.html /var/www/html/
+COPY ./srcs/index.htm /var/www/html/
 
 #install mysql
 RUN apt-get install -y mariadb-server php-mysql
