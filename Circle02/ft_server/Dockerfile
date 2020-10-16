@@ -34,9 +34,9 @@ RUN curl https://files.phpmyadmin.net/phpMyAdmin/4.9.5/phpMyAdmin-4.9.5-all-lang
 COPY ./srcs/config.inc.php ./phpmyadmin
 
 #install wordpress && setting wordpress config
-RUN curl https://wordpress.org/latest.zip -o wordpress.zip &&\
-    unzip wordpress.zip &&\
-    rm -rf wordpress.zip
+COPY ./srcs/wordpress-5.5.1.zip
+RUN unzip wordpress-5.5.1.zip &&\
+    rm -rf wordpress-5.5.1.zip
 COPY ./srcs/wp-config.php ./wordpress
 
 #set permission
