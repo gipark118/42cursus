@@ -2,9 +2,9 @@
 
 ### Final Score
 
-![](.\images\ft_server_finale.png)
+![](\images\ft_server_finale.png)
 
-![](.\images\ft_server_score.png)
+![](\images\ft_server_score.png)
 
 ### First Try
 
