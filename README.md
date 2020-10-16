@@ -8,7 +8,7 @@
 |        |  04   |       **[netwhat](./Circle01/netwhat)**       |    -     | ✔️Perfect |   0   | **100**/100 | 2020. 09. 13 |
 |   02   |  06   |    **[ft_server](./Circle02/ft_server/)**     |    Go    | ✔️Perfect |   0   | **100**/100 | 2020. 10. 17 |
 |        |  07   |             **[Exam Rank 02](#)**             |    C     |  ♻️Doing  |       |             |              |
-|        |  05   |       **[miniRT](./Cirecle02/miniRT)**        |    C     |  ♻️Doing  |       |             |              |
+|        |  05   |       **[miniRT](./Circle02/miniRT)**        |    C     |  ♻️Doing  |       |             |              |
 |   03   |  08   |                   minishell                   |          |          |       |             |              |
 |        |  09   |        **[libasm](./Circle03/libasm)**        | Assembly |  ♻️Doing  |       |             |              |
 |        |  10   |   **[ft_services](./Circle03/ft_services)**   |    Go    |  ♻️Doing  |       |             |              |
