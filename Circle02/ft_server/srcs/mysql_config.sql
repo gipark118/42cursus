@@ -1,7 +1,7 @@
 use mysql;
 flush privileges;
-create database wordpress;
-create user 'gipark'@'localhost' identified by '1201';
+CREATE DATABASE IF NOT EXISTS wordpress;
+create user if not exists 'gipark'@'localhost' identified by '1201';
 grant all privileges on wordpress.* to 'gipark'@'localhost';
 use wordpress;
 flush privileges;
