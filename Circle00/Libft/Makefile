@@ -60,7 +60,7 @@ NAME	= libft.a
 LIBC	= ar rcs
 CC		= gcc
 RM		= rm -f
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -std=c99
 
 all : ${NAME}
 
