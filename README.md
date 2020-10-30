@@ -7,7 +7,7 @@
 |        |  03   |     **[ft_printf](./Circle01/ft_printf)**     |    C     | ✔️Success |   0   | **108**/100 | 2020. 09. 13 |
 |        |  04   |       **[netwhat](./Circle01/netwhat)**       |    -     | ✔️Perfect |   0   | **100**/100 | 2020. 09. 13 |
 |   02   |  06   |    **[ft_server](./Circle02/ft_server/)**     |    Go    | ✔️Perfect |   0   | **100**/100 | 2020. 10. 17 |
-|        |  07   |   **[Exam Rank 02](./Circle02/Exam Rank 02)**   |    C     | ✔️Perfect |   3   | **100**/100 | 2020. 10. 30 |
+|        |  07   |        **[Exam Rank 02](./Circle02/)**        |    C     | ✔️Perfect |   3   | **100**/100 | 2020. 10. 30 |
 |        |  05   |        **[miniRT](./Circle02/miniRT)**        |    C     |  ♻️Doing  |       |             |              |
 |   03   |  08   |                   minishell                   |          |          |       |             |              |
 |        |  09   |        **[libasm](./Circle03/libasm)**        | Assembly |  ♻️Doing  |       |             |              |
