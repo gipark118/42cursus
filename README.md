@@ -6,9 +6,9 @@
 |   01   |  02   |  **[get_next_line](./Circle01/get_next_line)**  |    C     | ✔️Perfect |   1   | **115**/100 | 2020. 06. 20 |
 |        |  03   |      **[ft_printf](./Circle01/ft_printf)**      |    C     | ✔️Success |   0   | **108**/100 | 2020. 09. 13 |
 |        |  04   |        **[netwhat](./Circle01/netwhat)**        |    -     | ✔️Perfect |   0   | **100**/100 | 2020. 09. 13 |
-|   02   |  06   |     **[ft_server](./Circle02/ft_server/)**      |    Go    | ✔️Perfect |   0   | **100**/100 | 2020. 10. 17 |
-|        |  07   | **[Exam Rank 02](./Circle02/Exam%20Rank%2002)** |    C     | ✔️Perfect |   3   | **100**/100 | 2020. 10. 30 |
-|        |  05   |         **[miniRT](./Circle02/miniRT)**         |    C     |  ♻️Doing  |       |             |              |
+|   02   |  05   |     **[ft_server](./Circle02/ft_server/)**      |    Go    | ✔️Perfect |   0   | **100**/100 | 2020. 10. 17 |
+|        |  06   | **[Exam Rank 02](./Circle02/Exam%20Rank%2002)** |    C     | ✔️Perfect |   3   | **100**/100 | 2020. 10. 30 |
+|        |  07   |          **[cub3d](./Circle02/cub3d)**          |    C     |  ♻️Doing  |       |             |              |
 |   03   |  08   |                    minishell                    |          |          |       |             |              |
 |        |  09   |         **[libasm](./Circle03/libasm)**         | Assembly |  ♻️Doing  |       |             |              |
 |        |  10   |    **[ft_services](./Circle03/ft_services)**    |    Go    |  ♻️Doing  |       |             |              |
