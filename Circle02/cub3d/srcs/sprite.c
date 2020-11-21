@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 22:57:11 by gipark            #+#    #+#             */
-/*   Updated: 2020/11/22 03:44:34 by gipark           ###   ########.fr       */
+/*   Updated: 2020/11/22 03:52:04 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,8 @@ void			ft_sprite(t_all *all)
 	i = 0;
 	while (i < all->map.spr)
 	{
-		all->spr[i].d = hypot(all->spr[i].x - all->pos.x, all->spr[i].y - all->pos.y);
+		all->spr[i].d = hypot(all->spr[i].x - all->pos.x,
+				all->spr[i].y - all->pos.y);
 		i++;
 	}
 	ft_all_order(all);

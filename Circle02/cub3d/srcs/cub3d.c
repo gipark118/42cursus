@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 03:29:02 by gipark            #+#    #+#             */
-/*   Updated: 2020/11/22 03:38:36 by gipark           ###   ########.fr       */
+/*   Updated: 2020/11/22 03:52:25 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,8 @@ void	ft_init(char *cub, int bmp)
 
 int		main(int argc, char **argv)
 {
-	if (argc == 3 && ft_file_check(argv[1], "cub") && ft_save_check(argv[2], "--save"))
+	if (argc == 3 && ft_file_check(argv[1], "cub") &&
+			ft_save_check(argv[2], "--save"))
 		ft_init(argv[1], 1);
 	else if (argc == 2 && ft_file_check(argv[1], "cub"))
 		ft_init(argv[1], 0);

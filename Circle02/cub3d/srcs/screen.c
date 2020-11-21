@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 22:41:22 by gipark            #+#    #+#             */
-/*   Updated: 2020/11/22 03:31:13 by gipark           ###   ########.fr       */
+/*   Updated: 2020/11/22 03:52:16 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,8 @@ void	ft_screen(t_all *all)
 	int		end;
 
 	all->img.ptr = mlx_new_image(all->mlx.ptr, all->win.x, all->win.y);
-	all->img.addr = (unsigned int *)mlx_get_data_addr(all->img.ptr, &bpp, &sl, &end);
+	all->img.addr = (unsigned int *)mlx_get_data_addr(all->img.ptr, &bpp,
+			&sl, &end);
 	all->stk = malloc(sizeof(t_stk) * all->win.x);
 	while (all->ray.i < all->win.x)
 	{
