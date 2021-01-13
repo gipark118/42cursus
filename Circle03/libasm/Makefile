@@ -6,25 +6,16 @@
 #    By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/12 16:02:12 by gipark            #+#    #+#              #
-#    Updated: 2020/08/20 02:13:51 by gipark           ###   ########.fr        #
+#    Updated: 2021/01/13 23:31:23 by gipark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	= ft_strlen.s \
-				ft_strcpy.s \
-				ft_strcmp.s \
-				ft_write.s \
-				ft_read.s \
-				ft_strdup.s
-BONUS_SRCS	= ft_atoi_base.s \
-							ft_list_push_front.s \
-							ft_list_size.s \
-							ft_list_sort.s \
-							ft_list_remove_if.s
-OBJS			= ${SRCS:%.s=%.o}
+SRCS	= ${addprefix srcs/mandatory, ${shell ls ./srcs/mandatory | grep '\.c'}}
+BONUS_SRCS	= ${addprefix srcs/bonus, ${shell ls ./srcs/bonus | grep '\.c'}}
+OBJS	= ${SRCS:%.s=%.o}
 BONUS_OBJS	= ${BONUS_SRCS:%.s=%.o}
 NAME	= libasm.a
-LIBC	= ar -rcs
+LIBC	= ar rcs
 RM	= rm -f
 NASM	= nasm
 NASM_FLAGS	= -f macho64
@@ -43,9 +34,9 @@ bonus : ${BONUS_OBJS}
 clean :
 	${RM} ${OBJS} ${BONUS_OBJS}
 
-fclean :
+fclean : clean
 	${RM} ${NAME}
 
-re : fclean all
+re : fclean all bonus
 
 .PHONY : all bonus clean fclean re

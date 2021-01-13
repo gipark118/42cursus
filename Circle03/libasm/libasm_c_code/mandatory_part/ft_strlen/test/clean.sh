@@ -1,22 +1,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    test.sh                                            :+:      :+:    :+:    #
+#    clean.sh                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/01/05 00:13:24 by gipark            #+#    #+#              #
-#    Updated: 2021/01/05 15:11:11 by gipark           ###   ########.fr        #
+#    Created: 2021/01/05 00:39:05 by gipark            #+#    #+#              #
+#    Updated: 2021/01/05 00:57:54 by gipark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-echo ""
-echo "\033[1;31m======= NORM CHECK ======\033[0m"
-norminette -R CheckForbiddenSourceHeader ../*
-echo "\033[1;31m=========================\033[0m"
-
-echo "\033[1;31m=== COMPILE & EXECUTE ===\033[0m"
-gcc -Wall -Werror -Wextra -I../ *.c ../*.c
-./a.out
-echo "\033[1;31m=========================\033[0m"
-echo ""
+if [ -f "a.out" ]
+then
+	rm *.out
+	echo "\033[1;32m==== SUCCEED CLEAN ====\033[0m"
+else
+	echo "\033[1;32m==== FILES DOES NOT EXIST ====\033[0m"
+fi
