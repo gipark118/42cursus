@@ -34,7 +34,7 @@ ${NAME} : ${OBJS}
 	${LIBC} ${NAME} ${OBJS}
 
 ${EXEC} : ${NAME} ${MAIN_OBJ}
-	${CC} ${CFLAGS} ${MAIN_OBJ} ${NAME} -o ${EXEC}
+	${CC} ${CFLAGS} ${MAIN_OBJ} -L. -lasm ${NAME}  -o ${EXEC}
 
 all	: ${NAME}
 
