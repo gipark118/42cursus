@@ -6,7 +6,7 @@
 ;    By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2021/01/15 12:09:15 by gipark            #+#    #+#              ;
-;    Updated: 2021/01/20 01:01:37 by gipark           ###   ########.fr        ;
+;    Updated: 2021/01/22 11:09:55 by gipark           ###   ########.fr        ;
 ;                                                                              ;
 ; **************************************************************************** ;
 
@@ -33,8 +33,8 @@ _ft_strcpy:
 		jmp	_loop						; jump to _loop (while loop)
 	_end:
 	mov	rax, rdi		; rax = rdi
-	pop	rdx				; mov rdx, [rsp]	; add rsp, 8
-	pop rcx				; mov rcx, [rsp]	; add rsp, 8
+	pop	rcx				; mov rcx, [rsp]	; add rsp, 8
+	pop rdx				; mov rdx, [rsp]	; add rsp, 8
 	ret
 	
 _err:
