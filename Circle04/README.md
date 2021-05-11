@@ -2,7 +2,7 @@
 
 | Order |                     Project                     | Language |  Status  | Retry |    score    | Passed Date  |
 | :---: | :---------------------------------------------: | :------: | :------: | :---: | :---------: | :----------: |
-|  01   |       **[Exam Rank 04](./Exam Rank 04)**        |    C     | ✔️Success |   1   | **100**/100 | 2021. 04. 06 |
+|  01   |     **[Exam Rank 04](./Exam%20Rank%2004)**      |    C     | ✔️Success |   1   | **100**/100 | 2021. 04. 06 |
 |  02   |       **[philosophers](./philosophers)**        |    C     | ✔️Success |   0   | **100**/100 | 2021. 04. 23 |
 |  03   | **[CPP Module 00](./CPP_Module/CPP_Module_00)** |   CPP    | ♻ Doing  |       |             |              |
 |  04   |                  CPP Module 01                  |   CPP    | ♻ Doing  |       |             |              |
