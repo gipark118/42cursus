@@ -7,10 +7,10 @@
 |  03   | **[CPP Module 00](./CPP_Module/cpp_module_00)** |   CPP    | ♻ Doing  |       |             |              |
 |  04   | **[CPP Module 01](./CPP_Module/cpp_module_01)** |   CPP    | ♻ Doing  |       |             |              |
 |  05   | **[CPP Module 02](./CPP_Module/cpp_module_02)** |   CPP    | ♻ Doing  |       |             |              |
-|  06   | **[CPP Module 03](./CPP_Module/cpp_module_03)** |          |          |       |             |              |
-|  07   | **[CPP Module 04](./CPP_Module/cpp_module_04)** |          |          |       |             |              |
-|  08   | **[CPP Module 05](./CPP_Module/cpp_module_05)** |          |          |       |             |              |
-|  09   | **[CPP Module 06](./CPP_Module/cpp_module_06)** |          |          |       |             |              |
-|  10   | **[CPP Module 07](./CPP_Module/cpp_module_07)** |          |          |       |             |              |
-|  11   | **[CPP Module 08](./CPP_Module/cpp_module_08)** |          |          |       |             |              |
+|  06   | **[CPP Module 03](./CPP_Module/cpp_module_03)** |   CPP    | ♻ Doing  |       |             |              |
+|  07   | **[CPP Module 04](./CPP_Module/cpp_module_04)** |   CPP    | ♻ Doing  |       |             |              |
+|  08   | **[CPP Module 05](./CPP_Module/cpp_module_05)** |   CPP    | ♻ Doing  |       |             |              |
+|  09   | **[CPP Module 06](./CPP_Module/cpp_module_06)** |   CPP    | ♻ Doing  |       |             |              |
+|  10   | **[CPP Module 07](./CPP_Module/cpp_module_07)** |   CPP    | ♻ Doing  |       |             |              |
+|  11   | **[CPP Module 08](./CPP_Module/cpp_module_08)** |   CPP    | ♻ Doing  |       |             |              |
 

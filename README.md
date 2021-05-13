@@ -19,12 +19,12 @@
 |        |  15   | **[CPP Module 00](./Circle04/CPP_Module/cpp_module_00)** |   CPP    | ♻ Doing  |       |             |              |
 |        |  16   | **[CPP Module 01](./Circle04/CPP_Module/cpp_module_01)** |   CPP    | ♻ Doing  |       |             |              |
 |        |  17   | **[CPP Module 02](./Circle04/CPP_Module/cpp_module_02)** |   CPP    | ♻ Doing  |       |             |              |
-|        |  18   | **[CPP Module 03](./Circle04/CPP_Module/cpp_module_03)** |          |          |       |             |              |
-|        |  19   | **[CPP Module 04](./Circle04/CPP_Module/cpp_module_04)** |          |          |       |             |              |
-|        |  20   | **[CPP Module 05](./Circle04/CPP_Module/cpp_module_05)** |          |          |       |             |              |
-|        |  21   | **[CPP Module 06](./Circle04/CPP_Module/cpp_module_06)** |          |          |       |             |              |
-|        |  22   | **[CPP Module 07](./Circle04/CPP_Module/cpp_module_07)** |          |          |       |             |              |
-|        |  23   | **[CPP Module 08](./Circle04/CPP_Module/cpp_module_08)** |          |          |       |             |              |
+|        |  18   | **[CPP Module 03](./Circle04/CPP_Module/cpp_module_03)** |   CPP    | ♻ Doing  |       |             |              |
+|        |  19   | **[CPP Module 04](./Circle04/CPP_Module/cpp_module_04)** |   CPP    | ♻ Doing  |       |             |              |
+|        |  20   | **[CPP Module 05](./Circle04/CPP_Module/cpp_module_05)** |   CPP    | ♻ Doing  |       |             |              |
+|        |  21   | **[CPP Module 06](./Circle04/CPP_Module/cpp_module_06)** |   CPP    | ♻ Doing  |       |             |              |
+|        |  22   | **[CPP Module 07](./Circle04/CPP_Module/cpp_module_07)** |   CPP    | ♻ Doing  |       |             |              |
+|        |  23   | **[CPP Module 08](./Circle04/CPP_Module/cpp_module_08)** |   CPP    | ♻ Doing  |       |             |              |
 |   05   |  24   |                      ft_containers                       |          |          |       |             |              |
 |        |  25   |                         webserv                          |          |          |       |             |              |
 |        |  26   |                       Exam Rank 05                       |          |          |       |             |              |
