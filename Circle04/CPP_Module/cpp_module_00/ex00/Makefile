@@ -19,7 +19,7 @@ OBJS		= $(SRCS:%.cpp=$(DIR_OBJS)%.o)
 
 CC			= clang++
 RM			= rm -rf
-CFLAGS		= -Wall -Wextar -Werror
+CFLAGS		= -Wall -Wextar -Werror -std=c++98
 
 all :		$(NAME)
 
