@@ -6,12 +6,12 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:42:46 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:42:49 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/19 16:57:13 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Array.hpp"
 #include <iostream>
+#include "Array.hpp"
 
 int main (void)
 {
@@ -32,7 +32,7 @@ int main (void)
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERRORE LANCIATO" << std::endl;
+        std::cout << "Exception: error" << std::endl;
     }
     return (0);
 }

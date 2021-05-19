@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   whatever.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gipark <gipark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/18 06:41:37 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:42:29 by gipark           ###   ########.fr       */
+/*   Created: 2021/05/18 15:12:24 by gipark            #+#    #+#             */
+/*   Updated: 2021/05/18 15:13:21 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef WHATEVER_HPP
+# define WHATEVER_HPP
 
 template <class T> void swap (T &a, T &b) {
     T temp = a;
@@ -31,3 +32,5 @@ template <class T> T max (T a, T b) {
     else
         return b;
 }
+
+#endif

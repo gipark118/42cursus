@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:40:33 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:40:34 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/19 16:10:07 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,14 @@
 #include <iostream>
 #include <cstdlib>
 
+#pragma pack(push, 1)
 struct Data
 {
 	std::string str1;
 	int num;
 	std::string str2;
 };
+#pragma pack(pop)
 
 void rand_string(std::string &str)
 {
@@ -58,6 +60,7 @@ int main (void)
 	std::srand(std::time(0));
 	void *data_raw = serialize();
 	Data *d = deserialize(data_raw);
+
 	delete (d);
 	return (0);
 }

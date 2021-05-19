@@ -6,12 +6,13 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:41:59 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:41:59 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:36:39 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ITER_HPP
+# define ITER_HPP
 
-#pragma once
 #include <iostream>
 
 template <class T> void iter(T array[], int size, void (*f)(T const &))
@@ -22,7 +23,9 @@ template <class T> void iter(T array[], int size, void (*f)(T const &))
 	}
 }
 
-template <typename T> void stampa(T const &ele)
+template <typename T> void print(T const &ele)
 {
 	std::cout << ele << std::endl;
 }
+
+#endif

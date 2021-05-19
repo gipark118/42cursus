@@ -3,30 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gipark <gipark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 22:53:21 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:09:08 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/18 18:14:28 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Form.hpp"
 
-Form::Form(std::string name, int gradeForSign, int gradeForExecute) : name(name), gradeForSign(gradeForSign), gradeForExecute(gradeForExecute), isSigned(false) {
+Form::Form(std::string name, int gradeForSign, int gradeForExecute):
+	name(name), gradeForSign(gradeForSign), gradeForExecute(gradeForExecute), isSigned(false)
+{
 	if (this->gradeForSign < 1 || this->gradeForExecute < 1)
 		throw Form::GradeTooHighException();
 	if (this->gradeForSign > 150 || this->gradeForExecute > 150)
 		throw Form::GradeTooLowException();
 }
 
-Form::~Form() {}
+Form::~Form()
+{
+}
 
-Form::Form(const Form &other) : name(other.name), gradeForSign(other.gradeForSign), gradeForExecute(other.gradeForExecute)
+Form::Form(const Form &other):
+	name(other.name), gradeForSign(other.gradeForSign), gradeForExecute(other.gradeForExecute)
 {
 	*this = other;
 }
 
-Form &Form::operator = (const Form &other)
+Form &Form::operator=(const Form &other)
 {
 	if (this != &other)
 	{

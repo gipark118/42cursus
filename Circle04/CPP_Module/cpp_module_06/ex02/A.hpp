@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   A.hpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gipark <gipark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:40:41 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:40:45 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/18 20:03:09 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include "Base.hpp"
+#ifndef A_HPP
+# define A_HPP
+
+# include "Base.hpp"
 
 class A : public Base {};
+
+#endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   RobotomyRequestForm.cpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gipark <gipark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 01:02:13 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:13:21 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/18 18:52:10 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,9 @@ RobotomyRequestForm &RobotomyRequestForm::operator = (const RobotomyRequestForm 
 	return (*this);
 }
 
-RobotomyRequestForm::~RobotomyRequestForm() {}
+RobotomyRequestForm::~RobotomyRequestForm()
+{
+}
 
 void RobotomyRequestForm::execute(const Bureaucrat & executor) const
 {

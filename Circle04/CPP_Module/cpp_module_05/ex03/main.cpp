@@ -3,22 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gipark <gipark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:14:12 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:14:13 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/18 19:43:16 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include <string>
+#include <iostream>
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
 #include "PresidentialPardonForm.hpp"
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "Intern.hpp"
-#include <string>
-#include <iostream>
 #define RED "\033[0;31m"
 #define OFF "\033[0m"
 
@@ -28,15 +27,15 @@ int main (void)
 	try
 	{
 		Intern i;
-		Form *f = i.makeForm("presidential pardon", "Mario");
+		Form *f = i.makeForm("presidential pardon", "Kim");
 		std::cout << *f;
 
-		Bureaucrat b1 = Bureaucrat("Pippo", 1);
+		Bureaucrat b1 = Bureaucrat("Han", 1);
 		b1.signForm(*f);
 		f->execute(b1);
 		b1.executeForm(*f);
 
-		Bureaucrat b2 = Bureaucrat("Gino", 67);
+		Bureaucrat b2 = Bureaucrat("Baek", 67);
 		b2.executeForm(*f);
 		delete(f);
 	}
@@ -49,9 +48,9 @@ int main (void)
 	try
 	{
 		Intern i;
-		Form *f = i.makeForm("robotomy request", "MARIO");
+		Form *f = i.makeForm("robotomy request", "Kim");
 		std::cout << *f;
-		Bureaucrat b1 = Bureaucrat("Pippo", 5);
+		Bureaucrat b1 = Bureaucrat("Han", 5);
 		f->execute(b1);
 		b1.executeForm(*f);
 		b1.signForm(*f);
@@ -68,15 +67,15 @@ int main (void)
 	try
 	{
 		Intern i;
-		Form *f = i.makeForm("shrubbery creation", "PEPPE");
+		Form *f = i.makeForm("shrubbery creation", "KIM");
 		std::cout << *f;
-		Bureaucrat b1 = Bureaucrat("Pippo", 50);
+		Bureaucrat b1 = Bureaucrat("Han", 50);
 		b1.signForm(*f);
 		f->execute(b1);
 		delete (f);
 
-		f = i.makeForm("shrubbery creation", "GIANNI");;
-		Bureaucrat b2 = Bureaucrat("Gino", 105);
+		f = i.makeForm("shrubbery creation", "PARK");;
+		Bureaucrat b2 = Bureaucrat("Baek", 105);
 		b2.executeForm(*f);
 		b1.signForm(*f);
 		b2.executeForm(*f);
@@ -89,7 +88,7 @@ int main (void)
 
 	std::cout << RED << "**Form Error Name" << OFF << std::endl;
 	Intern i;
-	i.makeForm("Ciao", "Pippo");
+	i.makeForm("Seoul Form", "Hong");
 
 	return (0);
 }

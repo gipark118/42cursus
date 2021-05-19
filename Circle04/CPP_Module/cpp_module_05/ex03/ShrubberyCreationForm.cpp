@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ShrubberyCreationForm.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gipark <gipark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:15:22 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:21:03 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/18 19:30:25 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include <fstream>
 #include "ShrubberyCreationForm.hpp"
 #include "Bureaucrat.hpp"
-#include <fstream>
 
 ShrubberyCreationForm::ShrubberyCreationForm(std::string target) : Form("shrubbery creation", 145, 137)
 {
@@ -92,8 +91,3 @@ void ShrubberyCreationForm::execute(const Bureaucrat & executor) const
     else
         std::cout << "Can't execute. Form not signed" << std::endl;
 }
-
-
-/*
-
-*/

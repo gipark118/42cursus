@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   PresidentialPardonForm.cpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gipark <gipark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 03:24:27 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:13:27 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/18 18:48:07 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PresidentialPardonForm.hpp"
 #include "Bureaucrat.hpp"
 
-PresidentialPardonForm::PresidentialPardonForm(std::string target) : Form("presidential pardon", 25, 5)
+PresidentialPardonForm::PresidentialPardonForm(std::string target):
+    Form("presidential pardon", 25, 5)
 {
     this->target = target;
 }
@@ -28,7 +29,7 @@ PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &oth
 	*this = other;
 }
 
-PresidentialPardonForm &PresidentialPardonForm::operator = (const PresidentialPardonForm &other)
+PresidentialPardonForm &PresidentialPardonForm::operator=(const PresidentialPardonForm &other)
 {
 	if (this != &other)
 	{
@@ -38,7 +39,9 @@ PresidentialPardonForm &PresidentialPardonForm::operator = (const PresidentialPa
 	return (*this);
 }
 
-PresidentialPardonForm::~PresidentialPardonForm() {}
+PresidentialPardonForm::~PresidentialPardonForm()
+{
+}
 
 void PresidentialPardonForm::execute(const Bureaucrat & executor) const
 {

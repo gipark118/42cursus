@@ -6,7 +6,7 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:40:10 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:40:11 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/19 15:46:20 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #define RED "\033[0;31m"
 #define OFF "\033[0m"
 
-static bool is_all_number(std::string input)
+static bool is_number(std::string input)
 {
 	for (unsigned long i = 0; i < input.size(); i++)
 	{
@@ -35,6 +35,7 @@ static bool is_all_number(std::string input)
 
 int main (int argc, char **argv)
 {
+	size_t pos;
 	std::string input;
 	std::string control_1;
 	std::string control_2;
@@ -51,6 +52,7 @@ int main (int argc, char **argv)
 		return (0);
 	}
 	input = argv[1];
+	pos = input.find(".");
 	//NAN
 	if (input == "nanf" || input == "nan")
 	{
@@ -79,8 +81,13 @@ int main (int argc, char **argv)
 		std::cout << "double: -inf" << std::endl;
 	}
 	//FLOAT
-	else if (input.find(".") != std::string::npos && input[input.size() - 1] == 'f')
+	else if (pos != std::string::npos && input[input.size() - 1] == 'f')
 	{
+		if (input.find(".", pos + 1) != std::string::npos)
+		{
+			std::cout << RED << "** CONVERSION IMPOSSIBLE" << OFF << std::endl;
+			return (0);
+		}
 		std::cout << GREEN << "** FLOAT" << OFF << std::endl;
 		conv.str("");
 		conv << input.substr(0, input.size() - 1);
@@ -113,8 +120,13 @@ int main (int argc, char **argv)
 		}
 	}
 	//DOUBLE
-	else if (input.find(".") != std::string::npos)
+	else if (pos != std::string::npos)
 	{
+		if (input.find(".", pos + 1) != std::string::npos)
+		{
+			std::cout << RED << "** CONVERSION IMPOSSIBLE" << OFF << std::endl;
+			return (0);
+		}
 		std::cout << GREEN << "** DOUBLE" << OFF << std::endl;
 		conv.str("");
 		conv << input;
@@ -147,7 +159,7 @@ int main (int argc, char **argv)
 		}
 	}
 	//INT
-	else if (is_all_number(input))
+	else if (is_number(input))
 	{
 		std::cout << GREEN << "** INT" << OFF << std::endl;
 		conv.str("");

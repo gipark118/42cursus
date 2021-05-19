@@ -6,12 +6,14 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:40:59 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:41:00 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/19 16:13:58 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#pragma once
+#ifndef C_HPP
+# define C_HPP
 #include "Base.hpp"
 
 class C : public Base {};
+
+#endif

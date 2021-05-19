@@ -3,33 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   PresidentialPardonForm.hpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gipark <gipark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:14:27 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:14:27 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/18 19:27:10 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef PRESIDENTIALPARDONFORM_HPP
+# define PRESIDENTIALPARDONFORM_HPP
 
-#pragma once
-#include "Form.hpp"
+# include "Form.hpp"
 
 class PresidentialPardonForm : public Form
 {
-    private:
-        std::string target;
-    	/* Default Constructor */
-		PresidentialPardonForm() : Form("presidential pardon", 25, 5), target("empty") {}
-	public:
-		/* Constructor */
-		PresidentialPardonForm(std::string target);
-		/* Destructor */
-		virtual ~PresidentialPardonForm();
-		/* Copy Constructor */
-		PresidentialPardonForm(const PresidentialPardonForm &other);
-        /* Operation overload = */
-		PresidentialPardonForm &operator = (const PresidentialPardonForm &other);
-		/* Other */
-	    void execute(const Bureaucrat& executor) const;
-		std::string getTarget(void) const;
+private:
+    std::string target;
+
+	PresidentialPardonForm() : Form("presidential pardon", 25, 5), target("empty") {}
+    
+public:
+	PresidentialPardonForm(std::string target);
+	virtual ~PresidentialPardonForm();
+	PresidentialPardonForm(const PresidentialPardonForm &other);
+
+	PresidentialPardonForm &operator=(const PresidentialPardonForm &other);
+
+    void execute(const Bureaucrat& executor) const;
+	std::string getTarget(void) const;
 };
+
+#endif

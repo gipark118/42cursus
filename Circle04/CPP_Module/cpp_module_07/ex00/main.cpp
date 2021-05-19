@@ -6,10 +6,9 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:41:52 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:41:52 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/19 16:33:50 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <iostream>
 #include "whatever.hpp"
@@ -21,6 +20,7 @@ int main( void ) {
     std::cout << "a = " << a << ", b = " << b << std::endl;
     std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
     std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
+    
     std::string c = "chaine1";
     std::string d = "chaine2";
     ::swap(c, d);
