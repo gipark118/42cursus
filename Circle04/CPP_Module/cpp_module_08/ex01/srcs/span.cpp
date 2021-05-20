@@ -6,16 +6,16 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:43:27 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:43:28 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/20 11:56:41 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "span.hpp"
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
 #include <algorithm>
 #include <vector>
+#include "span.hpp"
 
 Span::Span(unsigned int _N)
 {
@@ -35,14 +35,16 @@ Span::Span(unsigned int _N, bool _random)
 	}
 }
 
-Span::~Span() {}
+Span::~Span()
+{
+}
 
 Span::Span(const Span &other)
 {
 	*this = other;
 }
 
-Span &Span::operator = (const Span &other)
+Span &Span::operator=(const Span &other)
 {
 	if (this != &other)
 	{
@@ -56,7 +58,7 @@ Span &Span::operator = (const Span &other)
 void Span::addNumber(int _n)
 {
 	if (this->index == this->N)
-		throw Span::SpanPieno();
+		throw Span::fullSpan();
 	this->array.push_back(_n);
 	this->index++;
 }
@@ -64,7 +66,7 @@ void Span::addNumber(int _n)
 int Span::shortestSpan(void) const
 {
 	if (this->index < 2)
-		throw Span::PochiElementi();
+		throw Span::severalElement();
 	unsigned int min = 4294967295;
 	std::vector<int> temp = this->array;
 	std::sort(temp.begin(), temp.end());
@@ -80,13 +82,13 @@ int Span::shortestSpan(void) const
 int Span::longestSpan(void) const
 {
 	if (this->index < 2)
-		throw Span::PochiElementi();
+		throw Span::severalElement();
 	int max = *std::max_element(this->array.begin(), this->array.end());
 	int min = *std::min_element(this->array.begin(), this->array.end());
 	return max - min;
 }
 
-void Span::stampa(void) const
+void Span::print(void) const
 {
 	if (this->index == 0)
 		std::cout << "Array: [ ]";

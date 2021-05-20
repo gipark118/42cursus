@@ -6,18 +6,17 @@
 /*   By: gipark <gipark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 06:43:40 by gipark            #+#    #+#             */
-/*   Updated: 2021/05/18 06:43:41 by gipark           ###   ########.fr       */
+/*   Updated: 2021/05/20 12:18:41 by gipark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <iostream>
-#include "mutantstack.hpp"
 #include <list>
+#include "mutantstack.hpp"
 
 int main (void)
 {
-	std::cout << "*** MAIN SUBJECT" << std::endl;
+	std::cout << "*** MAIN" << std::endl;
 	MutantStack<int> mstack;
 	mstack.push(5);
 	mstack.push(17);
@@ -41,7 +40,7 @@ int main (void)
 	std::stack<int> s(mstack);
 	std::cout << s.size() << std::endl;
 
-	std::cout << "*** TEST ITERATORI" << std::endl;
+	std::cout << "*** TEST ITERATOR" << std::endl;
 	MutantStack<int> m;
 	m.push(10);
 	m.push(50);
@@ -49,13 +48,13 @@ int main (void)
 	m.push(85);
 	m.push(9);
 
-	/* AVANTI */
+	/* Normal */
 	for (MutantStack<int>::iterator i = m.begin(); i != m.end(); i++)
 	{
 		std::cout << *i << " ";
 	}
 	std::cout << std::endl;
-	/* INDIETRO */
+	/* Reverse */
 	for (MutantStack<int>::reverse_iterator i = m.rbegin(); i != m.rend(); i++)
 	{
 		std::cout << *i << " ";
