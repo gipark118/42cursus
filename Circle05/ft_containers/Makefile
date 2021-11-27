@@ -3,7 +3,7 @@ NAME		= ft_containers
 DIR_SRCS	= ./srcs/
 DIR_OBJS	= ./objs/
 SRCS		= 	main.cpp	\
-				#vector.cpp	\
+				vector.cpp	\
 				stack.cpp	\
 				map.cpp
 OBJS		= $(SRCS:%.cpp=$(DIR_OBJS)%.o)
