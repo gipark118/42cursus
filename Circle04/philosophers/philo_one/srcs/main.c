@@ -85,7 +85,7 @@ int		main(int argc, char **argv)
 		print_error(NUMBER_OF_ARG);
 	else
 	{
-		if (info_init(&info, (const char **)argv))
+	    if (info_init(&info, (const char **)argv))
 			return (FAILURE);
 		if (mutex_init(&mutex, &info))
 			return (FAILURE);
