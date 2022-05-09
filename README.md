@@ -32,4 +32,4 @@
 |        |  28   |                       Exam Rank 06                       |   ...    |    ❌     |       |             |              |
 | Branch |  29   |                           ...                            |          |          |       |             |              |
 |        |  30   |                           ...                            |          |          |       |             |              |
-|  New   |  31   |           **[NetPractice](./New/NetPractice)**           |    -     |  ♻Doing  |       |             |              |
+|  New   |  31   |           **[NetPractice](./New/NetPractice)**           |    -     | ✔️Success |   0   | **100**/100 | 2022. 1. 11 |
